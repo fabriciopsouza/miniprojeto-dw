@@ -1,0 +1,28 @@
+-- Criando dimensao filial
+CREATE TABLE dim_filial (
+	cod_filial INT NOT NULL PRIMARY KEY,
+	descricao VARCHAR(50),
+	cidade varchar(20),
+	estado varchar (2)
+);
+--
+-- Criando dimensao data
+CREATE TABLE dim_data (
+	cod_data INT NOT NULL PRIMARY KEY,
+	data DATE	
+);
+
+--
+-- Criando dimensao produtos
+CREATE TABLE dim_produtos (
+	cod_produto INT NOT NULL PRIMARY KEY,
+	descricao VARCHAR(50),
+	cod_barras INT,
+	marca VARCHAR(20)
+);
+--
+-- Criando dimensao tipo pagamento
+CREATE TABLE dim_tipo_pagamento (
+	cod_tipo INT NOT NULL PRIMARY KEY,
+	descricao VARCHAR(20)
+);
