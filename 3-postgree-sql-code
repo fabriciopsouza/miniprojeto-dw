@@ -23,6 +23,6 @@ CREATE TABLE dim_produtos (
 --
 -- Criando dimensao tipo pagamento
 CREATE TABLE dim_tipo_pagamento (
-	cod_tipo INT NOT NULL PRIMARY KEY,
+	cod_tipo VARCHAR(20) NOT NULL PRIMARY KEY,
 	descricao VARCHAR(20)
 );
