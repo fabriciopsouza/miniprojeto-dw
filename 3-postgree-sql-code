@@ -17,7 +17,7 @@ CREATE TABLE dim_data (
 CREATE TABLE dim_produtos (
 	cod_produto INT NOT NULL PRIMARY KEY,
 	descricao VARCHAR(50),
-	cod_barras INT,
+	cod_barras VARCHAR(20),
 	marca VARCHAR(20)
 );
 --
